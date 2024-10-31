@@ -1,0 +1,155 @@
+.tablet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.tablet .tablet__content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 1.1rem;
+  grid-row-gap: 1.1em;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.tablet__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: var(--darck-gray);
+}
+
+.card__image {
+  background-color: var(--darck);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.card__image img {
+  height: 90px;
+}
+
+.tablet__card .card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  max-width: 20rem;
+}
+
+.tablet__card h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  border-bottom: solid 1px var(--gray);
+}
+
+.tablet__card p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.tablet__card a {
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+
+  color: var(--white);
+  background-color: var(--orange);
+  transition: 0.2s;
+}
+
+.btn__back {
+  position: fixed;
+  top: 2rem;
+  left: 0.55rem;
+
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+
+  background-color: var(--orange);
+  z-index: 99;
+}
+
+.btn__back a {
+  font-weight: 400;
+}
+
+/* Responsividade */
+
+/* Dispositivos menores */
+@media (min-width: 768px) {
+  .tablet {
+    justify-content: center;
+  }
+
+  .tablet .tablet__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .card__image img {
+    height: 100px;
+  }
+
+  .tablet__card h5 {
+    font-size: 1.1rem;
+  }
+
+  .tablet__card p {
+    font-size: 1rem;
+  }
+
+  .tablet__card a {
+    padding: 0.3rem;
+  }
+}
+
+/* Dispositivos medios */
+@media (min-width: 1024px) {
+  .tablet {
+    justify-content: center;
+  }
+
+  .tablet .tablet__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .tablet__card h5 {
+    font-size: 1.3rem;
+  }
+
+  .tablet__card p {
+    font-size: 1rem;
+  }
+
+  .tablet__card a:hover {
+    box-shadow: 0 0 5px var(--orange);
+  }
+}
+
+/* Dispositivos medios */
+@media (min-width: 1280px) {
+  .tablet {
+    justify-content: center;
+  }
+
+  .tablet .tablet__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 6rem;
+    width: 100%;
+  }
+}

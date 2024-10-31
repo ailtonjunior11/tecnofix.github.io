@@ -1,0 +1,159 @@
+.notebook {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.notebook .notebook__content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 1.1rem;
+  grid-row-gap: 1.1rem;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.notebook__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: var(--darck-gray);
+}
+
+.card__image {
+  background-color: var(--darck);
+  padding: 0rem;
+  border-radius: 0.5rem;
+}
+
+.card__image img {
+  height: 100px;
+}
+
+.card__image .lenovo__img {
+  height: 90px;
+}
+
+.notebook__card .card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  max-width: 20rem;
+}
+
+.notebook__card h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  border-bottom: solid 1px var(--gray);
+}
+
+.notebook__card p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.notebook__card a {
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+
+  color: var(--white);
+  background-color: var(--orange);
+  transition: 0.2s;
+}
+
+.btn__back {
+  position: fixed;
+  top: 2rem;
+  left: 0.55rem;
+
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+
+  background-color: var(--orange);
+  z-index: 99;
+}
+
+.btn__back a {
+  font-weight: 400;
+}
+
+/* Responsividade */
+
+/* Dispositivos menores */
+@media (min-width: 768px) {
+  .notebook {
+    justify-content: center;
+  }
+
+  .notebook .notebook__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .card__image img {
+    height: 100px;
+  }
+
+  .notebook__card h5 {
+    font-size: 1.1rem;
+  }
+
+  .notebook__card p {
+    font-size: 1rem;
+  }
+
+  .notebook__card a {
+    padding: 0.3rem;
+  }
+}
+
+/* Dispositivos medios */
+@media (min-width: 1024px) {
+  .notebook {
+    justify-content: center;
+  }
+
+  .notebook .notebook__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .notebook__card h5 {
+    font-size: 1.3rem;
+  }
+
+  .notebook__card p {
+    font-size: 1rem;
+  }
+
+  .notebook__card a:hover {
+    box-shadow: 0 0 5px var(--orange);
+  }
+}
+
+/* Dispositivos medios */
+@media (min-width: 1280px) {
+  .notebook {
+    justify-content: center;
+  }
+
+  .notebook .notebook__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 6rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../css/global.css";
+@import "../css/variables.css";
+
+@import "../css/components/header-navbar.css";
+@import "../css/components/home.css";
+@import "../css/components/about.css";
+@import "../css/components/products.css";
+@import "../css/components/location.css";
+@import "../css/components/contact.css";
+@import "../css/components/notebook.css";
+@import "../css/components/smartphone.css";
+@import "../css/components/tablet.css";
+@import "../css/components/smartwatch.css";
