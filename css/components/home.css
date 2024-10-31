@@ -1,3 +1,4 @@
+/* Mobile first */
 .home {
   display: flex;
 }
@@ -26,7 +27,8 @@
 }
 
 .home .home__content .home__text p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: var(--gray);
 }
 
@@ -92,6 +94,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-image: url("../../img/back-home-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .home .home__content {
