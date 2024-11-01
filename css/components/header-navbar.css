@@ -26,7 +26,7 @@ header {
 .logo span {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--orange);
+  color: var(--purple);
 }
 
 nav {
@@ -50,7 +50,7 @@ nav {
 .bar {
   width: 1.2rem;
   height: 2px;
-  background-color: var(--orange);
+  background-color: var(--purple);
   transition: transform 0.3s ease;
 }
 
@@ -153,11 +153,11 @@ nav {
   }
 
   .nav-links a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .nav-links li a:hover {
-    color: var(--orange);
-    text-shadow: 0 0 5px var(--orange);
+    color: var(--purple);
+    text-shadow: 0 2px 3px var(--purple);
   }
 }

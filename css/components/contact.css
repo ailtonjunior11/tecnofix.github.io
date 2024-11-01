@@ -89,7 +89,7 @@
 
   .contact__redes a i:hover {
     transform: scale(1.2);
-    background-color: var(--orange);
+    background-color: var(--purple);
   }
 }
 
@@ -124,7 +124,7 @@
 
   .contact__redes a i:hover {
     transform: scale(1.5);
-    background-color: var(--orange);
+    background-color: var(--purple);
   }
 
   .contact {

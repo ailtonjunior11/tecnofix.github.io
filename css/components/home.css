@@ -44,7 +44,7 @@
   width: 100%;
 
   color: var(--white);
-  background-color: var(--orange);
+  background-color: var(--purple);
   transition: 0.3s;
   border-radius: 0.4rem;
 }
@@ -127,7 +127,7 @@
 
   .home .home__content .home__text a:hover {
     border-radius: 0.5rem;
-    box-shadow: 0 0 8px var(--orange);
+    box-shadow: 0 0 8px var(--purple);
   }
 
   .home .image img {

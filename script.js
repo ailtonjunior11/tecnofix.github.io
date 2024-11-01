@@ -18,3 +18,14 @@ sr.reveal(".about__text", {
   distance: "130px",
   duration: 1500,
 });
+
+sr.reveal(".product__card", {
+  origin: "bottom",
+  distance: "130px",
+  duration: 1500,
+});
+
+sr.reveal(".contact__content", {
+  duration: 1500,
+  opacity: 0,
+});

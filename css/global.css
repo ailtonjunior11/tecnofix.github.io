@@ -21,7 +21,7 @@ section {
 }
 
 .home .home__content .home__text h1 span {
-  color: var(--orange);
+  color: var(--purple);
 }
 
 h2 {
@@ -33,7 +33,7 @@ h2 {
 
 span {
   font-weight: 600;
-  color: var(--orange);
+  color: var(--purple);
 }
 
 footer {

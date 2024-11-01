@@ -62,7 +62,7 @@
   border-radius: 0.2rem;
 
   color: var(--white);
-  background-color: var(--orange);
+  background-color: var(--purple);
   transition: 0.2s;
 }
 
@@ -74,7 +74,7 @@
   padding: 0.1rem 0.3rem;
   border-radius: 0.2rem;
 
-  background-color: var(--orange);
+  background-color: var(--purple);
   z-index: 99;
 }
 
@@ -136,7 +136,7 @@
   }
 
   .tablet__card a:hover {
-    box-shadow: 0 0 5px var(--orange);
+    box-shadow: 0 0 5px var(--purple);
   }
 }
 
