@@ -8,7 +8,7 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal(".home__content", {
-  origin: "left",
+  origin: "top",
   distance: "100px",
   duration: 1500,
 });
