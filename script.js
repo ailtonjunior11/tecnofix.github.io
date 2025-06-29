@@ -1,7 +1,12 @@
 // Config menu mobile
 document.getElementById("menu-toggle").addEventListener("click", function () {
-  this.classList.toggle("active");
-  document.getElementById("nav-links").classList.toggle("show");
+  this.classList.toggle("active"); // Alterna a classe "active" no botão de menu.
+
+  document.getElementById("nav-links").classList.toggle("show"); // Alterna a classe "show" no menu de navegação.
+
+  document.getElementById("nav-links").addEventListener("click", function () {
+    this.classList.remove("show"); // Remove a classe "show" do menu quando um link é clicado.
+  });
 });
 
 // Config scrollreveal

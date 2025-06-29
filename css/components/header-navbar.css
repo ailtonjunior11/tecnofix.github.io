@@ -57,7 +57,7 @@ nav {
 .nav-links {
   display: none;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
 
   width: 100%;
   position: absolute;
@@ -65,9 +65,8 @@ nav {
   right: 0;
 
   text-align: center;
-  padding: 3rem;
+  padding: 1rem;
 
-  border-radius: 8px;
   background-color: var(--darck);
   z-index: 100;
 
@@ -120,7 +119,7 @@ nav {
     top: 0;
     right: 0;
     z-index: 99;
-    padding: 1rem 1.1rem;
+    padding: 1rem 3rem;
   }
 
   .navbar {
@@ -143,8 +142,8 @@ nav {
     opacity: 1;
     width: auto;
 
-    padding: 0 2rem;
-    gap: 5rem;
+    padding: 0 5rem;
+    gap: 4rem;
 
     border-left: none;
     border-right: none;
@@ -156,8 +155,16 @@ nav {
     font-size: 1.1rem;
   }
 
-  .nav-links li a:hover {
-    color: var(--purple);
-    text-shadow: 0 2px 3px var(--purple);
+  .nav-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: var(--purple);
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
   }
 }
